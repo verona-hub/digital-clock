@@ -1,0 +1,446 @@
+.device:root {
+  font-size: 16px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  text-align: center;
+}
+
+/*
+███████ ████████ ██    ██ ██      ███████
+██         ██     ██  ██  ██      ██
+███████    ██      ████   ██      █████
+     ██    ██       ██    ██      ██
+███████    ██       ██    ███████ ███████
+*/
+body,
+nav a,
+footer p {
+  color: rgb(245, 245, 245);
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0b112f), color-stop(#0b153a), color-stop(#0d1845), color-stop(#0f1b51), to(#131e5c));
+  background-image: -o-linear-gradient(top, #0b112f, #0b153a, #0d1845, #0f1b51, #131e5c);
+  background-image: linear-gradient(to bottom, #0b112f, #0b153a, #0d1845, #0f1b51, #131e5c);
+  font-family: 'Bellota Text', cursive;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+.date {
+  font-size: 2rem;
+}
+
+.time div span {
+  -webkit-box-shadow: 0 0 0 1px rgb(0, 0, 0);
+  box-shadow: 0 0 0 1px rgb(0, 0, 0);
+}
+
+.time div span:first-child {
+  font-size: 2.8rem;
+}
+
+.hours-number,
+.minutes-number,
+.seconds-number {
+  background-color: rgb(16, 149, 254);
+  border-radius: 4px 4px 0 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.hours-letters,
+.minutes-letters,
+.seconds-letters,
+footer p {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.hours-letters,
+.minutes-letters,
+.seconds-letters {
+  background-color: rgb(236, 0, 98);
+  border-radius: 0 0 4px 4px;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+footer p {
+  font-weight: 300;
+}
+
+/*
+███    ███  █████  ██ ███    ██
+████  ████ ██   ██ ██ ████   ██
+██ ████ ██ ███████ ██ ██ ██  ██
+██  ██  ██ ██   ██ ██ ██  ██ ██
+██      ██ ██   ██ ██ ██   ████
+*/
+body {
+  min-height: 100vh;
+}
+
+header {
+  position: relative;
+  top: 30px;
+}
+
+nav a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-decoration: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+nav img {
+  height: 60px;
+  margin-right: 10px;
+}
+
+h1 {
+  margin-bottom: 5px;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+main {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+/*
+██████   ██████  ██   ██ ███████ ███████
+██   ██ ██    ██  ██ ██  ██      ██
+██████  ██    ██   ███   █████   ███████
+██   ██ ██    ██  ██ ██  ██           ██
+██████   ██████  ██   ██ ███████ ███████
+*/
+.date {
+  cursor: default;
+}
+
+.time {
+  cursor: default;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.time div {
+  -webkit-box-reflect: below 3px linear-gradient(transparent, rgba(0, 0, 0, 0.4));
+  margin: 0 5px;
+  position: relative;
+}
+
+.time div span {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  position: relative;
+  width: 120px;
+}
+
+.time div span:nth-child(2) {
+  height: 50px;
+}
+
+.hours,
+.minutes,
+.seconds {
+  overflow: hidden;
+}
+
+.hours-number,
+.minutes-number,
+.seconds-number,
+.hours-letters,
+.minutes-letters,
+.seconds-letters {
+  text-align: center;
+  -webkit-transition: background-color 1000ms, -webkit-transform 800ms;
+  transition: background-color 1000ms, -webkit-transform 800ms;
+  -o-transition: transform 800ms, background-color 1000ms;
+  transition: transform 800ms, background-color 1000ms;
+  transition: transform 800ms, background-color 1000ms, -webkit-transform 800ms;
+}
+
+/*
+███████  ██████   ██████  ████████ ███████ ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+█████   ██    ██ ██    ██    ██    █████   ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+██       ██████   ██████     ██    ███████ ██   ██
+*/
+footer,
+.footer-wrapper {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+footer {
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-wrapper {
+  margin-bottom: 20px;
+}
+
+footer a {
+  display: block;
+  text-decoration: none;
+}
+
+footer img {
+  height: 60px;
+  width: 60px;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+/*
+███    ███ ███████ ██████  ██  █████
+████  ████ ██      ██   ██ ██ ██   ██
+██ ████ ██ █████   ██   ██ ██ ███████
+██  ██  ██ ██      ██   ██ ██ ██   ██
+██      ██ ███████ ██████  ██ ██   ██
+*/
+@media screen and (min-width: 601px) {
+  main {
+    min-height: 65vh;
+  }
+
+  .date {
+    margin: 0 0 40px;
+  }
+}
+
+@media screen and (min-width: 1266px) {
+  .date {
+    bottom: 5vh;
+    position: relative;
+  }
+
+  .digital-clock {
+    position: relative;
+    top: 5vh;
+  }
+
+  footer {
+    bottom: 0;
+    position: absolute;
+  }
+
+  /*
+██   ██  ██████  ██    ██ ███████ ██████
+██   ██ ██    ██ ██    ██ ██      ██   ██
+███████ ██    ██ ██    ██ █████   ██████
+██   ██ ██    ██  ██  ██  ██      ██   ██
+██   ██  ██████    ████   ███████ ██   ██
+*/
+  .hours-number:hover,
+  .minutes-number:hover,
+  .seconds-number:hover {
+    background-color: rgb(236, 0, 98);
+    -webkit-transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    transform: scale(1.6);
+  }
+
+  .hours-letters:hover,
+  .minutes-letters:hover,
+  .seconds-letters:hover {
+    background-color: rgb(16, 149, 254);
+    -webkit-transform: translate(0, -15px);
+    -ms-transform: translate(0, -15px);
+    transform: translate(0, -15px);
+  }
+}
+
+@media screen and (max-width: 1365px) and (orientation: portrait) {
+  footer {
+    bottom: 0;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 1365px) and (orientation: landscape) {
+  footer {
+    margin-top: 150px;
+    position: relative;
+  }
+}
+
+/*
+ ██  ██████   ██████   ██████      ██████  ██   ██
+███ ██  ████ ██  ████ ██  ████     ██   ██  ██ ██
+ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██     ██████    ███
+ ██ ████  ██ ████  ██ ████  ██     ██       ██ ██
+ ██  ██████   ██████   ██████      ██      ██   ██
+*/
+@media screen and (max-width: 1050px) and (orientation: portrait) {
+  main {
+    min-height: 55vh;
+  }
+
+  .date {
+    bottom: 5vh;
+    position: relative;
+  }
+
+  .digital-clock {
+    position: relative;
+    top: 5vh;
+  }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .date {
+    margin-top: 20vh;
+  }
+
+  footer {
+    margin-top: 45vh;
+  }
+}
+
+/*
+ ██████   ██████   ██████      ██████  ██   ██
+██       ██  ████ ██  ████     ██   ██  ██ ██
+███████  ██ ██ ██ ██ ██ ██     ██████    ███
+██    ██ ████  ██ ████  ██     ██       ██ ██
+ ██████   ██████   ██████      ██      ██   ██
+*/
+@media screen and (max-width: 640px) {
+  .time div span {
+    height: 80px;
+    margin: 0 auto;
+    width: 100px;
+  }
+
+  .digital-clock {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 700px) and (orientation: landscape) {
+  .date {
+    margin: 40px 0;
+  }
+
+  footer {
+    margin-top: 50vh;
+  }
+}
+
+/*
+███    ███  ██████  ██████  ██ ██      ███████
+████  ████ ██    ██ ██   ██ ██ ██      ██
+██ ████ ██ ██    ██ ██████  ██ ██      █████
+██  ██  ██ ██    ██ ██   ██ ██ ██      ██
+██      ██  ██████  ██████  ██ ███████ ███████
+*/
+@media screen and (min-width: 480px) and (orientation: portrait) {
+  body {
+    min-height: 100vh;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 480px) {}
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  nav img {
+    height: 40px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .date {
+    font-size: 1.4rem;
+  }
+
+  .time div span {
+    width: 100px;
+  }
+
+  footer {
+    bottom: 0;
+    position: absolute;
+  }
+}
+
+/*
+██ ██████  ██   ██  ██████  ███    ██ ███████     ███████
+██ ██   ██ ██   ██ ██    ██ ████   ██ ██          ██
+██ ██████  ███████ ██    ██ ██ ██  ██ █████       ███████
+██ ██      ██   ██ ██    ██ ██  ██ ██ ██               ██
+██ ██      ██   ██  ██████  ██   ████ ███████     ███████
+*/
+@media screen and (max-width: 325px) {
+  .time div span {
+    height: 80px;
+    width: 80px;
+  }
+
+  .hours-letters, .minutes-letters, .seconds-letters {
+    font-size: 0.7rem;
+  }
+}
