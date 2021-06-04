@@ -1,7 +1,3 @@
-.device:root {
-  font-size: 16px;
-}
-
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -242,12 +238,51 @@ footer p {
 }
 
 /*
+██   ██  ██████  ██    ██ ███████ ██████
+██   ██ ██    ██ ██    ██ ██      ██   ██
+███████ ██    ██ ██    ██ █████   ██████
+██   ██ ██    ██  ██  ██  ██      ██   ██
+██   ██  ██████    ████   ███████ ██   ██
+*/
+.hours-number:hover,
+.minutes-number:hover,
+.seconds-number:hover {
+  background-color: rgb(236, 0, 98);
+  -webkit-transform: scale(1.6);
+  -ms-transform: scale(1.6);
+  transform: scale(1.6);
+}
+
+.hours-letters:hover,
+.minutes-letters:hover,
+.seconds-letters:hover {
+  background-color: rgb(16, 149, 254);
+  -webkit-transform: translate(0, -15px);
+  -ms-transform: translate(0, -15px);
+  transform: translate(0, -15px);
+}
+
+/*
 ███    ███ ███████ ██████  ██  █████
 ████  ████ ██      ██   ██ ██ ██   ██
 ██ ████ ██ █████   ██   ██ ██ ███████
 ██  ██  ██ ██      ██   ██ ██ ██   ██
 ██      ██ ███████ ██████  ██ ██   ██
 */
+@media screen and (max-width: 1365px) and (orientation: portrait) {
+  footer {
+    bottom: 0;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 1365px) and (orientation: landscape) {
+  footer {
+    margin-top: 150px;
+    position: relative;
+  }
+}
+
 @media screen and (min-width: 601px) {
   main {
     min-height: 65vh;
@@ -272,45 +307,6 @@ footer p {
   footer {
     bottom: 0;
     position: absolute;
-  }
-
-  /*
-██   ██  ██████  ██    ██ ███████ ██████
-██   ██ ██    ██ ██    ██ ██      ██   ██
-███████ ██    ██ ██    ██ █████   ██████
-██   ██ ██    ██  ██  ██  ██      ██   ██
-██   ██  ██████    ████   ███████ ██   ██
-*/
-  .hours-number:hover,
-  .minutes-number:hover,
-  .seconds-number:hover {
-    background-color: rgb(236, 0, 98);
-    -webkit-transform: scale(1.6);
-    -ms-transform: scale(1.6);
-    transform: scale(1.6);
-  }
-
-  .hours-letters:hover,
-  .minutes-letters:hover,
-  .seconds-letters:hover {
-    background-color: rgb(16, 149, 254);
-    -webkit-transform: translate(0, -15px);
-    -ms-transform: translate(0, -15px);
-    transform: translate(0, -15px);
-  }
-}
-
-@media screen and (max-width: 1365px) and (orientation: portrait) {
-  footer {
-    bottom: 0;
-    position: absolute;
-  }
-}
-
-@media screen and (max-width: 1365px) and (orientation: landscape) {
-  footer {
-    margin-top: 150px;
-    position: relative;
   }
 }
 
@@ -388,21 +384,12 @@ footer p {
   }
 }
 
-/*
-███    ███  ██████  ██████  ██ ██      ███████
-████  ████ ██    ██ ██   ██ ██ ██      ██
-██ ████ ██ ██    ██ ██████  ██ ██      █████
-██  ██  ██ ██    ██ ██   ██ ██ ██      ██
-██      ██  ██████  ██████  ██ ███████ ███████
-*/
 @media screen and (min-width: 480px) and (orientation: portrait) {
   body {
     min-height: 100vh;
     overflow: hidden;
   }
 }
-
-@media screen and (max-width: 480px) {}
 
 @media screen and (max-width: 480px) and (orientation: portrait) {
   nav img {
@@ -427,13 +414,6 @@ footer p {
   }
 }
 
-/*
-██ ██████  ██   ██  ██████  ███    ██ ███████     ███████
-██ ██   ██ ██   ██ ██    ██ ████   ██ ██          ██
-██ ██████  ███████ ██    ██ ██ ██  ██ █████       ███████
-██ ██      ██   ██ ██    ██ ██  ██ ██ ██               ██
-██ ██      ██   ██  ██████  ██   ████ ███████     ███████
-*/
 @media screen and (max-width: 325px) {
   .time div span {
     height: 80px;
